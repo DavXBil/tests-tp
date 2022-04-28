@@ -4,7 +4,7 @@ import faker from "@faker-js/faker";
     const tva = 0.2
 
     
-    const createCart = () => {
+    export const createCart = () => {
            let cart = []
            for (let i = 0; i < randomNumber; i++) {
                    cart.push({

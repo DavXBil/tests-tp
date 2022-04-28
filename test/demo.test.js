@@ -1,10 +1,9 @@
-import * as should from 'should'
+import should from 'should'
 import {createCart, getTVA, total} from "../main.js"
-var User = function(name){  
-    this.name = name;
-};
+
+
 describe("Checking if cart generation runs without problems", () => {  
-    it("asking if cart is an object", function(){
+    it("asking if cart is an object", () => {
         
         should(createCart()).be.instanceof(Object);
     });
@@ -12,6 +11,6 @@ describe("Checking if cart generation runs without problems", () => {
 
 describe("Check if TVA runs correctly", () => {
     it("Asking if tva is a number", () => {
-        should(getTVA(total).be.a.Number())
+        should(getTVA(total)).be.a.Number()
     })
 });
