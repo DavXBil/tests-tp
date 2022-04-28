@@ -11,6 +11,6 @@ describe("Checking if cart generation runs without problems", () => {
 
 describe("Check if TVA runs correctly", () => {
     it("Asking if tva is a number", () => {
-        should(getTVA(total)).be.a.Number()
+        should(getTVA('10')).be.a.Number()
     })
 });

@@ -27,8 +27,6 @@ import faker from "@faker-js/faker";
                 total += parseInt(product.price)  
         });
 
-        console.log(total)
-
         return total
     }
     
