@@ -2,7 +2,6 @@ import faker from "@faker-js/faker";
 
     const randomNumber = faker.datatype.number(10)
     const tva = 0.2
-
     
     export const createCart = () => {
            let cart = []
